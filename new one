@@ -24,8 +24,8 @@
             to { transform: scale(1.1); }
         }
 
-        body {
-    background-image: url('https://imgur.com/a/xgP7WVS'); /* 加上分號 */
+   body {
+    background-image: url('https://i.imgur.com/PfL2FO3.jpg'); /* 更新為直接的圖片鏈接 */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,7 +37,8 @@
     color: black; /* 預設文字為黑色 */
     text-align: center; /* 文字置中 */
     animation: background-zoom 10s infinite alternate linear; /* 背景動畫 */
-    }
+}
+
 
 
         div {
