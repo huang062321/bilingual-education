@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教案計畫下載</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .menu { display: none; margin-top: 10px; }
+        .menu a { display: block; margin: 5px 0; text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+
+<!-- 按鈕 -->
+<button onclick="toggleMenu()">📂 查看計畫</button>
+
+<!-- 選單 -->
+<div id="menu" class="menu">
+    <a href="https://drive.google.com/drive/folders/1bzchSwSvBERPoksbGrVz70vLtAxfknW0?usp=sharing" target="_blank">
+        『英語課以英語授課為主』教學教案徵選計畫
+    </a>
+    <a href="https://drive.google.com/drive/folders/1p5rP69gD6WaB2cjyoXccG90EOmicVaTx?usp=sharing" target="_blank">
+        『英語課以英語授課為主』暨教師公開授課獎勵實施計畫
+    </a>
+    <a href="https://drive.google.com/drive/folders/1jd3t52LcjcMv1cZ-y8mfC4Qiwy2J-8cr?usp=sharing" target="_blank">
+        優良教案
+    </a>
+</div>
+
+<script>
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
