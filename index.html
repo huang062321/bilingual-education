@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>雙語教育</title>
     <style>
+        /* 頁面背景動畫 */
+        @keyframes background-zoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* 標題淡入動畫 */
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 連結懸停動畫 */
+        @keyframes hover-grow {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
         body {
             background-image: url('https://www.bjxku.com/uploads/images/img/2021/0827/1630059511129309.jpg');
             background-size: cover;
@@ -17,22 +36,41 @@
             min-height: 100vh;
             color: black; /* 預設文字為黑色 */
             text-align: center; /* 文字置中 */
+            animation: background-zoom 10s infinite alternate linear; /* 背景動畫 */
         }
+
         div {
             background-color: rgba(255, 255, 255, 0.7); /* 透明背景 */
             padding: 20px;
             border-radius: 10px; /* 圓角邊框 */
             margin-bottom: 40px; /* 調整兩部分之間的間隔 */
+            animation: fade-in 1s ease-out; /* 進場動畫 */
         }
+
         h2, h3 {
             color: brown; /* 標題顏色為咖啡色 */
+            animation: fade-in 1s ease-out; /* 標題動畫 */
         }
+
         ul {
             list-style: none; /* 移除點點 */
             padding: 0; /* 移除內邊距 */
         }
+
         a {
             color: black; /* 所有連結文字為黑色 */
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out; /* 平滑過渡 */
+        }
+
+        a:hover {
+            animation: hover-grow 0.3s forwards; /* 滑鼠懸停動畫 */
+            color: brown; /* 懸停變咖啡色 */
+        }
+
+        .coffee-color {
+            color: brown; /* 咖啡色 */
         }
     </style>
 </head>
@@ -64,6 +102,10 @@
             <li>
                 <a href="https://docs.google.com/document/d/1NNwR1zfSXPEaLnD0kFZzzhLWI5kOBBth/edit?usp=drive_link&ouid=101414810988589699433&rtpof=true&sd=true" target="_blank">
                     1140210府教學字第1140035087號113口說二10TETE公開授課獎勵計畫_附件1
+                </a>
+            </li>
+        </ul>
+    </div>
                 </a>
             </li>
         </ul>
