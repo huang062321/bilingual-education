@@ -7,28 +7,43 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://drive.google.com/uc?export=view&id=10jpriMYbB5eFBpVG-xpXs4KIgVb8Pd57'); /* 使用正確的圖片鏈接 */
-            background-size: cover;
-            background-position: center;
             margin: 0;
+            padding: 0;
+            display: flex; /* 使用彈性盒模型 */
+            align-items: center; /* 垂直置中 */
+            height: 100vh; /* 使頁面高度充滿視窗 */
+            background-color: #f4f4f4; /* 頁面背景顏色 */
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px; /* 最大寬度 */
+            margin: auto;
+        }
+        .image {
+            flex: 1; /* 左邊圖片區域 */
+            background-image: url('https://drive.google.com/uc?export=view&id=10jpriMYbB5eFBpVG-xpXs4KIgVb8Pd57');
+            background-size: cover; /* 背景圖片覆蓋整個區域 */
+            background-position: center; /* 背景圖片置中 */
+            border-radius: 10px 0 0 10px; /* 圓角邊框 */
+        }
+        .content {
+            flex: 1; /* 右邊文字區域 */
             padding: 20px;
-            color: #333;
+            border-radius: 0 10px 10px 0; /* 圓角邊框 */
+            background-color: rgba(255, 255, 255, 0.8); /* 背景透明 */
         }
         h2 {
-            color: #ffffff; /* 標題顏色 */
+            color: #333; /* 標題顏色 */
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         ul {
             list-style-type: none;
             padding: 0;
-            background-color: rgba(255, 255, 255, 0.8); /* 背景透明 */
-            border-radius: 10px;
-            padding: 20px;
         }
         li {
             margin: 15px 0;
-            text-align: center;
+            text-align: left; /* 左對齊文字 */
             padding: 10px;
             border: 1px solid #007BFF;
             border-radius: 5px;
@@ -45,31 +60,36 @@
     </style>
 </head>
 <body>
-    <h2>雙語教育</h2>
-    <ul>
-        <li>
-            『英語課以英語授課為主』教學教案徵選計畫
+    <div class="container">
+        <div class="image"></div>
+        <div class="content">
+            <h2>雙語教育</h2>
             <ul>
                 <li>
-                    <a href="https://drive.google.com/file/d/1Mp5bTgVgAQ-VtRCx0FHmQtiCtVhsRjMn/view?usp=drive_link" target="_blank">
-                        1140113府教學字第1140013341號113TETE教案徵選
-                    </a>
+                    『英語課以英語授課為主』教學教案徵選計畫
+                    <ul>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1Mp5bTgVgAQ-VtRCx0FHmQtiCtVhsRjMn/view?usp=drive_link" target="_blank">
+                                1140113府教學字第1140013341號113TETE教案徵選
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1HQvA2_N5T5FBysrhubgl-s1hQGGuXRcl/view?usp=drive_link" target="_blank">
+                                1140113府教學字第1140013341號113TETE教案徵選_附件計畫
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1HQvA2_N5T5FBysrhubgl-s1hQGGuXRcl/view?usp=drive_link" target="_blank">
-                        1140113府教學字第1140013341號113TETE教案徵選_附件計畫
+                    『英語課以英語授課為主』暨教師公開授課獎勵實施計畫
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1jd3t52LcjcMv1cZ-y8mfC4Qiwy2J-8cr?usp=drive_link">
+                        優良教案
                     </a>
                 </li>
             </ul>
-        </li>
-        <li>
-            『英語課以英語授課為主』暨教師公開授課獎勵實施計畫
-        </li>
-        <li>
-            <a href="https://drive.google.com/drive/folders/1jd3t52LcjcMv1cZ-y8mfC4Qiwy2J-8cr?usp=drive_link">
-                優良教案
-            </a>
-        </li>
-    </ul>
+        </div>
+    </div>
 </body>
 </html>
