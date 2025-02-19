@@ -24,22 +24,21 @@
             to { transform: scale(1.1); }
         }
 
-   body {
-    background-image: url('https://i.imgur.com/PfL2FO3.jpg'); /* 更新為直接的圖片鏈接 */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: black; /* 預設文字為黑色 */
-    text-align: center; /* 文字置中 */
-    animation: background-zoom 10s infinite alternate linear; /* 背景動畫 */
-}
-
-
+        body {
+            background-image: url('https://imgur.com/a/xgP7WVS');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: black; /* 預設文字為黑色 */
+            text-align: center; /* 文字置中 */
+            animation: background-zoom 10s infinite alternate linear; /* 背景動畫 */
+            position: relative; /* 設置相對位置以支持絕對定位 */
+        }
 
         div {
             background-color: rgba(255, 255, 255, 0.7); /* 透明背景 */
@@ -74,9 +73,23 @@
         .coffee-color {
             color: brown; /* 咖啡色 */
         }
+
+        .image-container {
+            position: absolute; /* 使其脫離文檔流，方便定位 */
+            top: 20px; /* 調整圖片的垂直位置 */
+            right: 20px; /* 調整圖片的水平位置 */
+        }
+
+        .right-image {
+            max-width: 200px; /* 設置圖片的最大寬度 */
+            height: auto; /* 自動調整高度 */
+        }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEherSNXHS-d1_7-zgm2itnYD1Tcep-bjlYryvHg7FTc-sy7bQ70nnnn0ihcsqA6zISqtodptcBiA8r-f5AtVrN8U-BbDTei7Kogop-Oquq4GLPZ1pNCEw-KSeRBlO5WDtTpUWVE7-KNQLqR/s1600/pose_yubisashi_kakunin_hakui_man.png" alt="Image" class="right-image">
+    </div>
     <div>
         <h2 class="coffee-color">教案計畫下載</h2>
         <ul>
