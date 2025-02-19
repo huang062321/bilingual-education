@@ -11,39 +11,24 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            text-align: center; /* 文字居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: black; /* 全部文字為黑色 */
+            text-align: center; /* 文字置中 */
         }
-
-        * {
-            color: black; /* 確保所有文字顏色為黑色 */
+        div {
+            background-color: rgba(255, 255, 255, 0.7); /* 透明背景 */
+            padding: 20px;
+            border-radius: 10px; /* 圓角邊框 */
         }
-
         h2, h3 {
-            color: black; /* 標題顏色 */
-            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
-            padding: 10px; /* 增加內邊距 */
-            display: inline-block; /* 讓背景只覆蓋文字 */
-            border-radius: 5px; /* 增加圓角效果 */
-            margin: 10px; /* 增加外邊距，避免緊貼 */
+            color: brown; /* 標題顏色為咖啡色 */
         }
-
         ul {
-            list-style-type: none; /* 去掉點點 */
-            padding: 0; /* 去掉內邊距 */
-        }
-
-        a {
-            color: black; /* 連結顏色 */
-            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
-            padding: 5px; /* 增加內邊距 */
-            border-radius: 5px; /* 增加圓角效果 */
-            text-decoration: none; /* 去掉下劃線 */
-            display: inline-block; /* 讓背景只覆蓋文字 */
-            margin: 5px; /* 增加外邊距，避免緊貼 */
-        }
-
-        a:hover {
-            background-color: rgba(255, 255, 255, 0.9); /* 懸停時增加不透明度 */
+            list-style: none; /* 移除點點 */
+            padding: 0; /* 移除內邊距 */
         }
     </style>
 </head>
@@ -55,12 +40,12 @@
                 <strong>『英語課以英語授課為主』教學教案徵選計畫</strong>
             </li>
             <li>
-                <a href="https://drive.google.com/file/d/1Mp5bTgVgAQ-VtRCx0FHmQtiCtVhsRjMn/view?usp=drive_link" target="_blank">
+                <a href="https://drive.google.com/file/d/1Mp5bTgVgAQ-VtRCx0FHmQtiCtVhsRjMn/view?usp=drive_link" target="_blank" style="color: brown;">
                     1140113府教學字第1140013341號113TETE教案徵選
                 </a>
             </li>
             <li>
-                <a href="https://drive.google.com/file/d/1HQvA2_N5T5FBysrhubgl-s1hQGGuXRcl/view?usp=drive_link" target="_blank">
+                <a href="https://drive.google.com/file/d/1HQvA2_N5T5FBysrhubgl-s1hQGGuXRcl/view?usp=drive_link" target="_blank" style="color: brown;">
                     1140113府教學字第1140013341號113TETE教案徵選_附件計畫
                 </a>
             </li>
@@ -68,12 +53,12 @@
                 <strong>『英語課以英語授課為主』暨教師公開授課獎勵實施計畫</strong>
             </li>
             <li>
-                <a href="https://drive.google.com/file/d/15sCARGDRwfSEpc_sEHorgHBq9Qh5tDY8/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/15sCARGDRwfSEpc_sEHorgHBq9Qh5tDY8/view?usp=sharing" target="_blank" style="color: brown;">
                     1140210府教學字第1140035087號113口說二10TETE公開授課獎勵計畫
                 </a>
             </li>
             <li>
-                <a href="https://docs.google.com/document/d/1NNwR1zfSXPEaLnD0kFZzzhLWI5kOBBth/edit?usp=drive_link&ouid=101414810988589699433&rtpof=true&sd=true" target="_blank">
+                <a href="https://docs.google.com/document/d/1NNwR1zfSXPEaLnD0kFZzzhLWI5kOBBth/edit?usp=drive_link&ouid=101414810988589699433&rtpof=true&sd=true" target="_blank" style="color: brown;">
                     1140210府教學字第1140035087號113口說二10TETE公開授課獎勵計畫_附件1
                 </a>
             </li>
@@ -86,22 +71,22 @@
                 <h3>110學年度全英語教學教案-特優(6所)</h3>
                 <ul>
                     <li>
-                        <a href="https://drive.google.com/file/d/1aWFr5xBqs6frvyrXGCtxTbl8kxgpsveW/view?usp=drive_link" target="_blank">港源國小</a>
+                        <a href="https://drive.google.com/file/d/1aWFr5xBqs6frvyrXGCtxTbl8kxgpsveW/view?usp=drive_link" target="_blank" style="color: brown;">港源國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1Px7dDovRM-sEndWGSGV-gaaI2IWdnWrN/view?usp=drive_link" target="_blank">前山國小</a>
+                        <a href="https://drive.google.com/file/d/1Px7dDovRM-sEndWGSGV-gaaI2IWdnWrN/view?usp=drive_link" target="_blank" style="color: brown;">前山國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1BuRu9V6ZzJfjlv7K77Oku5F2vw0K6Ka6/view?usp=drive_link" target="_blank">名崗國小</a>
+                        <a href="https://drive.google.com/file/d/1BuRu9V6ZzJfjlv7K77Oku5F2vw0K6Ka6/view?usp=drive_link" target="_blank" style="color: brown;">名崗國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1nBnP7noKW35wJjuXVtwkXeKicD61Zl2Y/view?usp=drive_link" target="_blank">同富國中</a>
+                        <a href="https://drive.google.com/file/d/1nBnP7noKW35wJjuXVtwkXeKicD61Zl2Y/view?usp=drive_link" target="_blank" style="color: brown;">同富國中</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1rDetW0XXTF9JVNpcPN1ApZsV6kw4Qt3W/view?usp=drive_link" target="_blank">五城國小</a>
+                        <a href="https://drive.google.com/file/d/1rDetW0XXTF9JVNpcPN1ApZsV6kw4Qt3W/view?usp=drive_link" target="_blank" style="color: brown;">五城國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1W-ITYUSQMS96aGZRKd2r1MIbO61_Jla6/view?usp=drive_link" target="_blank">力行國小</a>
+                        <a href="https://drive.google.com/file/d/1W-ITYUSQMS96aGZRKd2r1MIbO61_Jla6/view?usp=drive_link" target="_blank" style="color: brown;">力行國小</a>
                     </li>
                 </ul>
             </li>
@@ -109,10 +94,10 @@
                 <h3>111學年度全英語教學教案-特優(2所)</h3>
                 <ul>
                     <li>
-                        <a href="https://drive.google.com/file/d/1WzrB8yI-j2-uil7LjY2ex5qwemmdBSCN/view?usp=drive_link" target="_blank">羅娜國小</a>
+                        <a href="https://drive.google.com/file/d/1WzrB8yI-j2-uil7LjY2ex5qwemmdBSCN/view?usp=drive_link" target="_blank" style="color: brown;">羅娜國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1d4kEny6GaAjYfQvAbtWNEbH9uPyyO9UK/view?usp=drive_link" target="_blank">草屯國中</a>
+                        <a href="https://drive.google.com/file/d/1d4kEny6GaAjYfQvAbtWNEbH9uPyyO9UK/view?usp=drive_link" target="_blank" style="color: brown;">草屯國中</a>
                     </li>
                 </ul>
             </li>
@@ -120,19 +105,19 @@
                 <h3>112學年度全英語教學教案-特優(5所)</h3>
                 <ul>
                     <li>
-                        <a href="https://drive.google.com/file/d/1fSghlwmKnqc6MHIimTo66-rzZ4K3xPiC/view?usp=drive_link" target="_blank">漳和國小、和平國小</a>
+                        <a href="https://drive.google.com/file/d/1fSghlwmKnqc6MHIimTo66-rzZ4K3xPiC/view?usp=drive_link" target="_blank" style="color: brown;">漳和國小、和平國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/187zdnOMSH6Pcq70X5FtG3vKa396jOtHN/view?usp=drive_link" target="_blank">鹿谷國小</a>
+                        <a href="https://drive.google.com/file/d/187zdnOMSH6Pcq70X5FtG3vKa396jOtHN/view?usp=drive_link" target="_blank" style="color: brown;">鹿谷國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1DwQD9BaEtgKnhY1O6Rp83fY8ariUcHs1/view?usp=drive_link" target="_blank">魚池國中</a>
+                        <a href="https://drive.google.com/file/d/1DwQD9BaEtgKnhY1O6Rp83fY8ariUcHs1/view?usp=drive_link" target="_blank" style="color: brown;">魚池國中</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1y9U1u9cftospCwvyM4hdfWVj7kScqQmD/view?usp=drive_link" target="_blank">南投國小</a>
+                        <a href="https://drive.google.com/file/d/1y9U1u9cftospCwvyM4hdfWVj7kScqQmD/view?usp=drive_link" target="_blank" style="color: brown;">南投國小</a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1dTSfcKi7DBffDf6k9RR9S9WOScQKQube/view?usp=drive_link" target="_blank">三光國中</a>
+                        <a href="https://drive.google.com/file/d/1dTSfcKi7DBffDf6k9RR9S9WOScQKQube/view?usp=drive_link" target="_blank" style="color: brown;">三光國中</a>
                     </li>
                 </ul>
             </li>
