@@ -25,18 +25,20 @@
         }
 
         body {
-            background-image: url('https://www.bjxku.com/uploads/images/img/2021/0827/1630059511129309.jpg');
+            background-image: url('https://imgur.com/a/xgP7WVS');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
             display: flex;
+            flex-direction: column; /* 垂直排列內容 */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             color: black; /* 預設文字為黑色 */
             text-align: center; /* 文字置中 */
             animation: background-zoom 10s infinite alternate linear; /* 背景動畫 */
+            position: relative; /* 設置相對位置以支持絕對定位 */
         }
 
         div {
@@ -72,9 +74,23 @@
         .coffee-color {
             color: brown; /* 咖啡色 */
         }
+
+        .image-container {
+            position: absolute; /* 使其脫離文檔流，方便定位 */
+            top: 20px; /* 調整圖片的垂直位置 */
+            right: 20px; /* 調整圖片的水平位置 */
+        }
+
+        .right-image {
+            max-width: 200px; /* 設置圖片的最大寬度 */
+            height: auto; /* 自動調整高度 */
+        }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEherSNXHS-d1_7-zgm2itnYD1Tcep-bjlYryvHg7FTc-sy7bQ70nnnn0ihcsqA6zISqtodptcBiA8r-f5AtVrN8U-BbDTei7Kogop-Oquq4GLPZ1pNCEw-KSeRBlO5WDtTpUWVE7-KNQLqR/s1600/pose_yubisashi_kakunin_hakui_man.png" alt="Image" class="right-image">
+    </div>
     <div>
         <h2 class="coffee-color">教案計畫下載</h2>
         <ul>
@@ -102,10 +118,6 @@
             <li>
                 <a href="https://docs.google.com/document/d/1NNwR1zfSXPEaLnD0kFZzzhLWI5kOBBth/edit?usp=drive_link&ouid=101414810988589699433&rtpof=true&sd=true" target="_blank">
                     1140210府教學字第1140035087號113口說二10TETE公開授課獎勵計畫_附件1
-                </a>
-            </li>
-        </ul>
-    </div>
                 </a>
             </li>
         </ul>
@@ -169,5 +181,22 @@
             </li>
         </ul>
     </div>
+   <div class="related-resources" style="text-align: center;">
+    <h2 style="color: brown;">相關資源</h2>
+    <ul style="list-style-type: none; padding: 0; color: brown;">
+        <li>
+            <a href="https://cirn.moe.edu.tw/Module/index.aspx?sid=1192" target="_blank">CIRN國民中小學部分領域課程雙語教學實施計畫</a>
+        </li>
+        <li>
+            <a href="https://www.learnmode.net/course_library/1675" target="_blank">學習吧！雙語專區</a>
+        </li>
+        <li>
+            <a href="https://terms.naer.edu.tw/" target="_blank">國家教育研究院-雙語詞彙、學術名詞暨辭書資訊網</a>
+        </li>
+        <li>
+            <a href="https://bilingual.ndc.gov.tw/" target="_blank">雙語資料庫學習資源網</a>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
