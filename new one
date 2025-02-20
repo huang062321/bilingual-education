@@ -31,6 +31,7 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             display: flex;
+            flex-direction: column; /* 垂直排列內容 */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -177,6 +178,23 @@
                         <a href="https://drive.google.com/file/d/1dTSfcKi7DBffDf6k9RR9S9WOScQKQube/view?usp=drive_link">三光國中</a>
                     </li>
                 </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="coffee-color">相關資源</h2>
+        <ul>
+            <li>
+                <a href="https://cirn.moe.edu.tw/Module/index.aspx?sid=1192" target="_blank">CIRN國民中小學部分領域課程雙語教學實施計畫</a>
+            </li>
+            <li>
+                <a href="https://www.learnmode.net/course_library/1675" target="_blank">學習吧！雙語專區</a>
+            </li>
+            <li>
+                <a href="https://terms.naer.edu.tw/" target="_blank">國家教育研究院-雙語詞彙、學術名詞暨辭書資訊網</a>
+            </li>
+            <li>
+                <a href="https://bilingual.ndc.gov.tw/" target="_blank">雙語資料庫學習資源網</a>
             </li>
         </ul>
     </div>
